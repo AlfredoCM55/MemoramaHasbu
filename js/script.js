@@ -24,7 +24,6 @@ function generarTablero() {
   cargarIconos();
 
   let tablero = document.getElementById("tablero");
-
   let tarjetas = [];
   let len = iconos.length + 4;
   for (let i = 0; i < len; i++) {
