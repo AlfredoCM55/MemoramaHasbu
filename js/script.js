@@ -16,7 +16,19 @@ function cargarIconos() {
     `<img src="imagenes/moto.jpg">`,
     `<img src="imagenes/saludo.jpg">`,
     `<img src="imagenes/ufc.jpg">`,
-    `<img src="imagenes/descarga.jpg">`,
+   /*  `<img src="imagenes/descarga.jpg">`,
+    `<img src="imagenes/baño.jpg">`,
+    `<img src="imagenes/burger.jpg">`,
+    `<img src="imagenes/carota.jpg">`,
+    `<img src="imagenes/chago.jpg">`,
+    `<img src="imagenes/chef.jpg">`,
+    `<img src="imagenes/despierto.jpg">`,
+    `<img src="imagenes/mona.jpg">`,
+    `<img src="imagenes/sasuke.jpg">`,
+    `<img src="imagenes/tomando.jpg">`,
+    `<img src="imagenes/pistola.jpg">`,
+     */
+    
   ];
 }
 
