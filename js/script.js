@@ -1,5 +1,10 @@
 let iconos;
 let selectors = [];
+let puntos;
+const aciertoColor = document.getElementById("button")
+const aciertoColor1 = document.getElementById("btnColor")
+const aciertoColor2 = document.getElementById("btnColor1")
+
 
 generarTablero();
 
@@ -16,7 +21,7 @@ function cargarIconos() {
     `<img src="imagenes/moto.jpg">`,
     `<img src="imagenes/saludo.jpg">`,
     `<img src="imagenes/ufc.jpg">`,
-   /*  `<img src="imagenes/descarga.jpg">`,
+    `<img src="imagenes/descarga.jpg">`,
     `<img src="imagenes/baño.jpg">`,
     `<img src="imagenes/burger.jpg">`,
     `<img src="imagenes/carota.jpg">`,
@@ -27,18 +32,25 @@ function cargarIconos() {
     `<img src="imagenes/sasuke.jpg">`,
     `<img src="imagenes/tomando.jpg">`,
     `<img src="imagenes/pistola.jpg">`,
-     */
+     
     
   ];
 }
 
-function generarTablero() {
-  cargarIconos();
 
+
+function generarTablero() {
+  aciertoColor.style.background= "white";
+  aciertoColor1.style.background= "white"
+  aciertoColor2.style.background= "white"
+
+  puntos = 0
+  document.getElementById("puntos").innerHTML = "Puntos:" + puntos
+  cargarIconos();
+  selectors = []
   let tablero = document.getElementById("tablero");
   let tarjetas = [];
-  let len = iconos.length + 4;
-  for (let i = 0; i < len; i++) {
+  for (let i = 0; i < 16; i++) {
     tarjetas.push(`
         <div class="card-area" onclick="cardSelector(${i})">
             <div class="card" id="card${i}">
@@ -79,9 +91,23 @@ function desSelectors(selectors) {
       let c2 = document.getElementById("card" + selectors[1]);
       c1.style.transform = "rotateY(0deg)";
       c2.style.transform = "rotateY(0deg)";
+      aciertoColor.style.background= "red"
+      aciertoColor1.style.background= "red"
+      aciertoColor2.style.background = "white"
     } else {
-      back1.style.opacity = 0.1;
-      back2.style.opacity = 0.1;
+      
+      aciertoColor.style.background= "green"
+      aciertoColor1.style.background= "white"
+      aciertoColor2.style.background= "green"
+      
+      
+      
+      puntos++;
+      document.getElementById("puntos").innerHTML = "Puntos: " + puntos
     }
   }, 1000);
-}
+
+
+     
+  }
+

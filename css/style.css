@@ -5,10 +5,12 @@
 }
 body{
     min-height: 100vh;
+    margin-top: 5%;
     webkit-perspective: 1000;
     background: rgb(0,0,0);
-    background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(255,3,54,1) 100%);
-    
+    background: rgb(250,4,50);
+    background: rgb(246,2,2);
+    background: radial-gradient(circle, rgba(246,2,2,1) 44%, rgba(0,0,0,1) 65%);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -22,6 +24,14 @@ body{
     height: max-content;
     
 }
+.puntaje{
+    padding: 20px;    
+    margin-top: -10%;
+    margin-left: 80%;
+    display:flex;
+    font-size: 150%;
+    color: rgb(255, 255, 255);
+}  
 .card-area{
     display: inline-block;
     margin: 0 auto;
@@ -39,7 +49,7 @@ body{
 .card{
     position: relative;
     transform-style: preserve-3d;
-    animation: iniciar 0s;
+    animation: iniciar 2s;
 }
 .face{
     position: absolute;
@@ -73,8 +83,32 @@ body{
     background-color: rgb(255, 255, 255);
     float: left;
     margin-left: 80%;
+    box-shadow: 6px 6px 12px #c5c5c5,
+             -6px -6px 12px #ffffff;
+}
+.color{
+    text-align: center;
+    padding: 30px;    
+    margin-top: -2%;
+    margin-bottom: -10%;
+    margin-right: 5%;
+    border-radius: 40px;
+    background-color: rgb(255, 255, 255);
+    background-image: url();
+    float: left;
+    margin-left: 80%;
+}
+.color1{
     
-   
+    text-align: center;
+    padding: 30px;    
+    margin-top: -2%;
+    margin-right: 15%;
+    margin-bottom: -15%;
+    border-radius: 40px;
+    background-color: rgb(255, 255, 255);
+    float: left;
+    margin-left: 90%;
 }
 
 @keyframes iniciar{
